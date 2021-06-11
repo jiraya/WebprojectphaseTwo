@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Collage Photo Galary</title>
+<style>
+body{
+background-color:rgba(128,0,128,1.5);
+}
+h1
+{
+font-size:2.1rem;
+line-height:1.4rem;
+letter-spacing:0.5rem;
+text-align:center;
+color:white;
+margin-top:50px;
+}
+.maindiv
+{
+width:70%;
+height:400px;
+position:absolute;
+left:50%;
+top:50%;
+transform:translate(-50% ,-50%);
+background-image:url('col3.jpg');
+
+box-shadow:1px 2px 10px  10px white;
+animation:slider 20s infinite linear;
+}
+.btn{
+background-color: pink; /* Green */
+  border-radius: 20px;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+   box-shadow:0 5px 50px 0 rgb(255, 0, 128) inset,0 5prgb(128, 0, 128)0 #15f4ee,
+	0 5px 50px 0 rgb(255, 0, 255) inset, 0 5prgb(255, 0, 255)0 #15f4ee;
+  
+}
+@keyframes slider{
+0%{ background-image:url('col2.png'); }
+
+5%{background-image:url('slider/auditorium2.jpg'); }
+10%{background-image:url('slider/dance.jpg'); }
+
+20%{background-image:url('slider/project.jpg'); }
+
+30%{background-image:url('slider/drama.jpg'); }
+
+40%{background-image:url('slider/club.jpg'); }
+
+50%{background-image:url('slider/edutrip.jpg'); }
+
+60%{background-image:url('slider/game.jpg'); }
+
+70%{background-image:url('slider/volleyboll.jpg'); }
+}
+
+
+</style>
+</head>
+<body>
+<h1> Photo Slider</h1>
+<div class="maindiv">
+
+
+</div>
+<div class="btn">
+<form action="home.html" method="post">
+<button>Back</button>
+</div>
+</form>
+</body>
+</html>
